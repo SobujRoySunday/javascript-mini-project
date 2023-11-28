@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #222;
+  color: #eee;
+}
+
+.full {
+  height: calc(100vh + 1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-15%);
+  transition: all 1000ms ease-in-out;
+}
+
+.show {
+  opacity: 100;
+  transform: translateX(0%);
+}
